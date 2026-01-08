@@ -2,6 +2,29 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
 
+
+This project uses **The Movie Database (TMDB) API** and requires a personal API key.
+
+### Setup:
+
+1. Create an API key at:  
+   https://www.themoviedb.org/settings/api
+
+2. Create the file:
+
+   src/environments/environment.ts
+
+3. Add your API key:
+
+   ```ts
+   export const environment = {
+     apiUrl: 'https://api.themoviedb.org/3',
+     apiKey: 'YOUR_API_KEY_HERE'
+   };
+
+
+
+
 ## Development server
 
 To start a local development server, run:
