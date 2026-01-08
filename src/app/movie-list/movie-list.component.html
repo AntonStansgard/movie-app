@@ -1,0 +1,32 @@
+<h1>🎬 Movies</h1>
+
+<section class="movies">
+  <app-movie-card
+    *ngFor="let movie of movies()"
+    [movie]="movie"
+    (favourite)="addToFavourites($event)"
+    (watchList)="addToWatchList($event)">
+  </app-movie-card>
+</section>
+
+<hr />
+
+<section class="lists">
+  <div class="list">
+    <h2>⭐ Favourites</h2>
+    <ul>
+      <li *ngFor="let fav of favourites()">
+        {{ fav }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="list">
+    <h2>👁️ WatchList</h2>
+    <ul>
+      <li *ngFor="let watch of watchList()">
+        {{ watch }}
+      </li>
+    </ul>
+  </div>
+</section>

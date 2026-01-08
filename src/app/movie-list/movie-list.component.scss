@@ -1,0 +1,19 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.lists {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.list ul {
+  padding-left: 1.2rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
