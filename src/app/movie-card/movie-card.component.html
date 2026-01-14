@@ -17,6 +17,8 @@
   Language: {{ movie.original_language | uppercase }}
 </p>
 
+<p>Duration: {{ movie.runtime | duration }}</p>
+
   <div class="actions">
     <button (click)="addFavourite()">❤️ Favourite</button>
     <button (click)="addWatchList()">👁️ WatchList</button>
